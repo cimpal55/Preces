@@ -20,15 +20,26 @@ h1 {
     padding-left: 30px;
 }
 #addprec {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 150px;
-    height: 30px;
-    font-size: 15px;
-    font-family: monospace;
+    font-weight: 700;
+    color: white;
+    text-decoration: none;
+    padding: .8em 1em calc(.8em + 3px);
+    border-radius: 3px;
+    background: rgb(64,199,129);
+    transition: 0.2s;
+    border: none;
+    
 }
-.knop {
+#addprec:hover { background: rgb(53, 167, 110);
+outline: none;
+} 
+#addprec:active {
+    background: rgb(33,147,90);
+}
+#addprec:focus {
+    outline: none;
+}
+#knop {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -39,6 +50,43 @@ h1 {
     font-family: "OFL Sorts Mill Goudy", "Noto Nastaliq Urdu", "My Noto Nastaliq Urdu", Georgia, serif;
     letter-spacing: .051em;
 }
-.poisk {
-    
+.tet {
+    display: flex;
+    justify-content: center;
+    margin: 15px;
+    vertical-align: center;
+    font-size: 25px;
 }
+.da {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#form {
+    padding-left: 45px;
+    position: relative;
+    z-index: 1;
+    background: #FFFFFF;
+    max-width: 360px;
+    padding-right: 45px;
+    text-align: center;
+    padding-bottom: 30px;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+#pievienot {
+    font-family: "Roboto", sans-serif;
+    text-transform: uppercase;
+    outline: 0;
+    background: rgb(64,199,129);
+    width: 100%;
+    border: 0;
+    margin-top: 10px;
+    padding: 15px;
+    color: #FFFFFF;
+    font-size: 14px;
+    cursor: pointer;
+    transition: 0,3s;
+}
+#pievienot:hover {background: rgb(53, 167, 110);};
+#pievienot:active {background: rgb(33,147,90);};
+
