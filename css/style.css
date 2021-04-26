@@ -91,10 +91,26 @@ outline: none;
 #pievienot:hover {background: rgb(53, 167, 110);}
 #pievienot:active {background: rgb(33,147,90);}
 
-.gramata {
+#tovari {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.prece {
     display: flex;
     flex-direction: column;
     align-items: center;
+    border: 1.5px #343a40 solid;
+    border-radius: 15px;
+    height: 150px;
+    width: 170px;
+    margin-left: 25.3px;
+    margin-right: 25.3px;
+    margin-top: 25px;
+    margin-bottom: 5px;
+    background-color: lightgray;
 }
 
 
