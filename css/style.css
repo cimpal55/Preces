@@ -19,6 +19,7 @@ h1 {
     display: flex;
     padding-left: 30px;
 }
+
 #addprec {
     font-weight: 700;
     color: white;
@@ -58,11 +59,12 @@ outline: none;
     font-size: 25px;
 }
 #pop {
-    display: flex;
+    display: flex !important;
     justify-content: center;
     align-items: center;
 }
 #form {
+    display: none;
     margin-top: 30px;
     padding-left: 45px;
     background: #FFFFFF;
@@ -86,7 +88,13 @@ outline: none;
     cursor: pointer;
     transition: 0,3s;
 }
-#pievienot:hover {background: rgb(53, 167, 110);};
-#pievienot:active {background: rgb(33,147,90);};
+#pievienot:hover {background: rgb(53, 167, 110);}
+#pievienot:active {background: rgb(33,147,90);}
+
+.gramata {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
 
