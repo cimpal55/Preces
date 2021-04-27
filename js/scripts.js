@@ -1,7 +1,7 @@
-const formdiv = document.getElementById('pop');
-const form = document.getElementById('form');
-const knopka = document.getElementById('pievienot');
-const tov = document.getElementsByClassName('prece');
+const FORMDIV = document.getElementById('pop');
+const FORM = document.getElementById('form');
+const KNOPKA = document.getElementById('pievienot');
+const TOV = document.getElementsByClassName('prece');
 let preces = [];
 
 function render() {
@@ -21,12 +21,12 @@ function render() {
 }
 
 document.getElementById('addprec').addEventListener('click', () => {
-    form.style.display = 'block';
+    FORM.style.display = 'block';
 
 })
 
 document.getElementById('pievienot').addEventListener('click', () => {
-    form.style.display = 'none';
+    FORM.style.display = 'none';
 
     let prece = {nazv: nazv.value, comp: comp.value}
     
@@ -39,8 +39,9 @@ document.getElementById('pievienot').addEventListener('click', () => {
 })
 
 document.getElementById('zakr').addEventListener('click', () => {
-    form.style.display = 'none';
+    FORM.style.display = 'none';
 })
+
 function removeElement ()
 {
     tov.parentNode.removeChild(elem);
