@@ -44,7 +44,7 @@ document.getElementById('zakr').addEventListener('click', () => {
 
 function removeElement ()
 {
-    tov.parentNode.removeChild(elem);
+    TOV.parentNode.removeChild(elem);
 }
 
 
