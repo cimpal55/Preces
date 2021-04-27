@@ -1,5 +1,6 @@
 const formdiv = document.getElementById('pop');
 const form = document.getElementById('form');
+const knopka = document.getElementById('pievienot');
 let preces = [];
 
 function render() {
@@ -14,6 +15,11 @@ function render() {
         </div>`;
 
         tovari.innerHTML += prece;
+
+        if (preces == 3) {
+            alert("Limit is 20 preces")
+            knopka.disabled = true;
+        }
     }
 }
 
@@ -33,5 +39,11 @@ document.getElementById('pievienot').addEventListener('click', () => {
 
     render();
 })
+
+document.getElementById('zakr').addEventListener('click', () => {
+    form.style.display = 'none';
+})
+
+
 
 

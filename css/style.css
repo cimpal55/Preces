@@ -65,7 +65,7 @@ outline: none;
 }
 #form {
     display: none;
-    margin-top: 30px;
+    margin-top: 25px;
     padding-left: 45px;
     background: #FFFFFF;
     max-width: 360px;
@@ -113,4 +113,27 @@ outline: none;
     background-color: lightgray;
 }
 
+.close {
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    opacity: 0.3;
+    }
+.close:hover {
+    opacity: 1;
+    }
+.close:before, .close:after {
+    position: absolute;
+    right: -178px;
+    content: ' ';
+    height: 24px;
+    width: 2px;
+    background-color: #333;
+    }
+.close:before {
+    transform: rotate(45deg);
+    }
+.close:after {
+    transform: rotate(-45deg);
+    }
 
