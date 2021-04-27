@@ -65,8 +65,10 @@ outline: none;
 }
 #form {
     display: none;
+    position: fixed;
     margin-top: 25px;
     padding-left: 45px;
+    margin-top: 200px;
     background: #FFFFFF;
     max-width: 360px;
     padding-right: 45px;

@@ -1,6 +1,7 @@
 const formdiv = document.getElementById('pop');
 const form = document.getElementById('form');
 const knopka = document.getElementById('pievienot');
+const tov = document.getElementsByClassName('prece');
 let preces = [];
 
 function render() {
@@ -12,19 +13,16 @@ function render() {
         <div class="prece">
             <h3>Nosaukums: ${preces[i].nazv}</h3>
             <h4>Ražotajs: ${preces[i].comp}</h4>
-        </div>`;
+            <button type="button" id="deleted">Dzēst</button>
+        </div>`
 
         tovari.innerHTML += prece;
-
-        if (preces == 3) {
-            alert("Limit is 20 preces")
-            knopka.disabled = true;
-        }
     }
 }
 
 document.getElementById('addprec').addEventListener('click', () => {
     form.style.display = 'block';
+
 })
 
 document.getElementById('pievienot').addEventListener('click', () => {
@@ -43,7 +41,9 @@ document.getElementById('pievienot').addEventListener('click', () => {
 document.getElementById('zakr').addEventListener('click', () => {
     form.style.display = 'none';
 })
-
-
+function removeElement ()
+{
+    tov.parentNode.removeChild(elem);
+}
 
 
